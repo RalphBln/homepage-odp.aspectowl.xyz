@@ -1,0 +1,16 @@
+@prefix : <http://odp.aspectowl.xyz/util/0.1#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ottr:  <http://ns.ottr.xyz/0.4/> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+
+
+:SerialProperty [ ! owl:ObjectProperty ?R ] :: {
+  o-rdf:Type(?R, owl:ObjectProperty),
+
+  # owl:Thing SubClassOf: R some owl:Thing
+  o-owl-ax:SubClassOf(owl:Thing, ?_b0),
+  o-owl-re:ObjectSomeValuesFrom(?_b0, ?R, owl:Thing)
+} .

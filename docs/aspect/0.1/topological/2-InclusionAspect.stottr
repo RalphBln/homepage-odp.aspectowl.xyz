@@ -1,0 +1,20 @@
+@prefix : <http://odp.aspectowl.xyz/aspect/topological/0.1#> .
+@prefix aspect-owl: <http://ontology.aspectowl.xyz/0.6#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
+@prefix ottr:  <http://ns.ottr.xyz/0.4/> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+:2-InclusionAspect [ ! owl:Class ?Object1Class, ! owl:Class ?Object2Class, ! owl:ObjectProperty ?TopoSpaceRelation ] :: {
+  o-rdf:Type(?Object1Class, owl:Class),
+  o-rdf:Type(?Object2Class, owl:Class),
+  o-owl-ax:SubClassOf(?Object1Class, aspect-owl:TopologicalAspect),
+  o-owl-ax:SubClassOf(?Object2Class, aspect-owl:TopologicalAspect),
+  o-rdf:Type(?TopoSpaceRelation , owl:ObjectProperty),
+
+  o-owl-re:AllValuesFrom(_:exp1, ?TopoSpaceRelation, ?Object1Class),
+  o-owl-re:AllValuesFrom(_:exp2, ?TopoSpaceRelation, ?Object2Class),
+  o-owl-ax:SubClassOf(_:exp2, _:exp1)
+} .

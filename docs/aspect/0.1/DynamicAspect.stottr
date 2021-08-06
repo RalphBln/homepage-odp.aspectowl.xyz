@@ -1,0 +1,29 @@
+@prefix : <http://odp.aspectowl.xyz/aspect/0.1#> .
+@prefix util: <http://odp.aspectowl.xyz/util/0.1#> .
+@prefix aspect-owl: <http://ontology.aspectowl.xyz/0.6#> .
+@prefix aspect-owl-dyn: <http://ontology.aspectowl.xyz/0.6#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
+@prefix ottr:  <http://ns.ottr.xyz/0.4/> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+
+:DynamicAspect [ ! owl:Class ?DynamicAspectClass, ! NEList<owl:ObjectProperty> ?Actions, ! NEList<owl:Individual> ?States ] :: {
+  
+  o-owl-ax:SubClassOf(?AgentsGlobalEpistemicAspectClass, aspect-owl-dyn:DynamicAspect),
+  
+  o-rdf:Type(aspect-owl-dyn:n_BLOCK, owl:ObjectProperty),
+  o-rdf:Type(aspect-owl-dyn:n_SKIP, owl:ObjectProperty),
+  o-rdf:Type(aspect-owl-dyn:n_SKIP, owl:ReflexiveProperty),
+
+
+  cross | o-rdf:Type(++?Actions, owl:ObjectProperty),
+
+  cross | o-rdf:Type(++?States, owl:Individual),
+
+  o-rdf:Type(?DynamicAspectClass, owl:Class)
+
+
+} .

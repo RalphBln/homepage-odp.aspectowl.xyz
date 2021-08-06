@@ -1,0 +1,16 @@
+@prefix : <http://odp.aspectowl.xyz/aspect/0.1#> .
+@prefix util: <http://odp.aspectowl.xyz/util/0.1#> .
+@prefix aspect-owl: <http://ontology.aspectowl.xyz/0.6#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
+@prefix ottr:  <http://ns.ottr.xyz/0.4/> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+
+:NamedAspect [ ! owl:Class ?NamedAspectClass, ! owl:NamedIndividual ?NamedAspectIndividual ] :: {
+  o-rdf:Type(?NamedAspectClass, owl:Class),
+  o-rdf:Type(?NamedAspectIndividual, owl:Individual),
+  o-owl-ax:EquivObjectOneOf(?NamedAspectClass, (?NamedAspectIndividual))
+} .

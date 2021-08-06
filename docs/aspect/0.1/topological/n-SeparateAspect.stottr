@@ -1,0 +1,11 @@
+@prefix : <http://odp.aspectowl.xyz/aspect/topological/0.1#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+:n-SeparateAspect [ ! NEList<owl:Class> ?ObjectClasses, ! owl:ObjectProperty ?TopoSpaceRelation ] :: {
+  cross | o-rdf:Type(++?ObjectClasses, owl:Class),
+  cross | o-owl-ax:SubClassOf(++?ObjectClasses, aspect-owl:TopologicalAspect),
+  o-rdf:Type(?TopoSpaceRelation , owl:ObjectProperty),
+  o-owl-re:ObjectIntersectionOf(_:intersection, ?ObjectClasses),
+  o-owl-re:SomeValuesFrom(_:restriction, ?TopoSpaceRelation, _:intersection),
+  o-owl-ax:SubClassOf(_:restriction, owl:Nothing)
+} .

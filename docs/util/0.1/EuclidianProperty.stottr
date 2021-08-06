@@ -1,0 +1,45 @@
+@prefix : <http://odp.aspectowl.xyz/util/0.1#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix swrl:  <http://www.w3.org/2003/11/swrl#> .
+@prefix ottr:  <http://ns.ottr.xyz/0.4/> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+
+
+:EuclidianProperty [ ! owl:ObjectProperty ?R ] :: {
+  o-rdf:Type(?R, owl:ObjectProperty),
+
+  # Rule: R(?w, ?v), R(?w, ?u) -> R(?v, ?u)
+  o-rdf:Type(<urn:swrl#u>, swrl:Variable),
+  o-rdf:Type(<urn:swrl#v>, swrl:Variable),
+  o-rdf:Type(<urn:swrl#w>, swrl:Variable),
+
+  o-rdf:Type(?_rule, swrl:Imp),
+
+  ottr:Triple(?_rule, swrl:body, ?_body),
+  o-rdf:Type(?_body, swrl:AtomList),
+  ottr:Triple(?_body, rdf:first, ?_b0),
+  o-rdf:Type(?_b0, swrl:IndividualPropertyAtom),
+  ottr:Triple(?_b0, swrl:propertyPredicate, ?R),
+  ottr:Triple(?_b0, swrl:argument1, <urn:swrl#w>),
+  ottr:Triple(?_b0, swrl:argument2, <urn:swrl#v>),
+  ottr:Triple(?_body, rdf:rest, ?_b1),
+  o-rdf:Type(?_b1, swrl:AtomList),
+  ottr:Triple(?_b1, rdf:first, ?_b2),
+  o-rdf:Type(?_b2, swrl:IndividualPropertyAtom),
+  ottr:Triple(?_b2, swrl:propertyPredicate, ?R),
+  ottr:Triple(?_b2, swrl:argument1, <urn:swrl#w>),
+  ottr:Triple(?_b2, swrl:argument2, <urn:swrl#u>),
+  ottr:Triple(?_b2, rdf:rest, rdf:nil),
+
+  ottr:Triple(?_rule, swrl:head, ?_head),
+  o-rdf:Type(?_head, swrl:AtomList),
+  ottr:Triple(?_head, rdf:first, ?_b3),
+  o-rdf:Type(?_b3, swrl:IndividualPropertyAtom),
+  ottr:Triple(?_b3, swrl:propertyPredicate, ?R),
+  ottr:Triple(?_b3, swrl:argument1, <urn:swrl#v>),
+  ottr:Triple(?_b3, swrl:argument2, <urn:swrl#u>),
+  ottr:Triple(?_head, rdf:rest, rdf:nil)
+} .

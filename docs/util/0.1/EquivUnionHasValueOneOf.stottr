@@ -1,0 +1,14 @@
+@prefix : <http://odp.aspectowl.xyz/util/0.1#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ottr:  <http://ns.ottr.xyz/0.4/> .
+@prefix o-owl-re: <http://tpl.ottr.xyz/owl/restriction/0.1/> .
+@prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
+@prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
+
+:EqiuvUnionHasValueOneOf [ ! owl:Class ?C, ! owl:ObjectProperty ?R, ? owl:NamedIndividual ?I ] :: {
+
+  o-owl-re:HasValue(?_hv, ?R, ?I),
+  o-owl-re:ObjectOneOf(?_oo, (?I)),
+  o-owl-ax:EquivObjectUnionOf(?C, (?_hv, ?_oo))
+} .
