@@ -1,8 +1,13 @@
-# Ontology Design Patterns for Representing Context
+# Overview
 
-This website is about a collection of [ontology design patterns (ODPs)](http://ontologydesignpatterns.org/) for representing context using the [W3C Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and a novel extension called [Aspect-Oriented Ontology Development](https://aspectowl.xyz).
+This website is about a collection of [ontology design patterns (ODPs)](http://ontologydesignpatterns.org/) for representing context-dependent knowledge using the [W3C Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and a novel extension called [Aspect-Oriented Ontology Development](https://aspectowl.xyz).
 
 These pages accommodate supplementary resources accompanying two peer-reviewed publications on the topic, the workshop paper *"Ontology Design Patterns for Representing Context in Ontologies Using Aspect Orientation"*[^1] and the equally-titled book chapter[^2], which is an extended version of the workshop paper.
+
+*[ODP]: Ontology Design Pattern
+*[W3C]: World Wide Web Consortium
+*[OWL]: Web Ontology Language
+
 
 [^1]:
     === "Publication"

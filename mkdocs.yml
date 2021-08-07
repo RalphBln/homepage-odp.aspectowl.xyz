@@ -1,4 +1,4 @@
-site_name: AspectOWL Ontology Design Pattern Templates
+site_name: Ontology Design Patterns for Representing Context in Ontologies Using AspectOWL
 theme:
   name: material
   palette:
@@ -9,12 +9,14 @@ theme:
   features:
     - search.highlight
     - content.code.annotate
+    - navigation.expand
 plugins:
   - search
   - macros
 markdown_extensions:
   - admonition
   - footnotes
+  - abbr
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.tabbed
@@ -29,3 +31,18 @@ extra_javascript:
   - javascripts/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+copyright: Copyright &copy; 2021 Ralph Schäfermeier
+extra:
+  social:
+    - icon: fontawesome/brands/researchgate
+      link: https://www.researchgate.net/profile/Ralph-Schaefermeier
+      name: Get in touch
+nav:
+  - Overview: index.md
+  - ODP Templates:
+    - ODP-templates/named-aspect.md
+    - ODP-templates/temporal-aspect.md
+    - ODP-templates/epistemic-aspect.md
+    - ODP-templates/dynamic-aspect.md
+    - ODP-templates/topological-aspect.md
