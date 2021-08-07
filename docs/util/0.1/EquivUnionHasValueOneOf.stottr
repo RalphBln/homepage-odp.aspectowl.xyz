@@ -6,7 +6,7 @@
 @prefix o-owl-ax: <http://tpl.ottr.xyz/owl/axiom/0.1/> .
 @prefix o-rdf: <http://tpl.ottr.xyz/rdf/0.1/> .
 
-:EqiuvUnionHasValueOneOf [ ! owl:Class ?C, ! owl:ObjectProperty ?R, ? owl:NamedIndividual ?I ] :: {
+:EquivUnionHasValueOneOf [ ! owl:Class ?C, ! owl:ObjectProperty ?R, ? owl:NamedIndividual ?I ] :: {
 
   o-owl-re:HasValue(?_hv, ?R, ?I),
   o-owl-re:ObjectOneOf(?_oo, (?I)),

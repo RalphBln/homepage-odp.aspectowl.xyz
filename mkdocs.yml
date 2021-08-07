@@ -40,9 +40,10 @@ extra:
       name: Get in touch
 nav:
   - Overview: index.md
-  - ODP Templates:
+  - ODP templates:
     - ODP-templates/named-aspect.md
     - ODP-templates/temporal-aspect.md
     - ODP-templates/epistemic-aspect.md
     - ODP-templates/dynamic-aspect.md
     - ODP-templates/topological-aspect.md
+  - Utility Templates: ODP-templates/utility-templates.md

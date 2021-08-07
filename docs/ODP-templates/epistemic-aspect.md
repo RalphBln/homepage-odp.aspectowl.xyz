@@ -1,4 +1,4 @@
-# Epistemic Aspect
+# Epistemic aspect
 
 === "stOTTR"
 
