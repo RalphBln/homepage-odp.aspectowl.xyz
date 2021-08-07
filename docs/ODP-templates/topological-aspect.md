@@ -3,6 +3,10 @@
 
 ## 2 mutually separated objects aspect
 
+<figure>
+  <img src="/assets/topo_disjunctive.png" />
+  <figcaption>Two separated objects.</figcaption>
+</figure>
 
 === "stOTTR"
 
@@ -31,6 +35,11 @@ The generalization of the 2 mutually separated objects aspect.
 
 ## 2 objects touching wihtout overlap aspect
 
+<figure>
+  <img src="/assets/topo_touching.png" />
+  <figcaption>Two objects touching at their borders.</figcaption>
+</figure>
+
 === "stOTTR"
 
     ```
@@ -42,6 +51,11 @@ The generalization of the 2 mutually separated objects aspect.
     Coming soon. :construction:
 
 ## object inclusion aspect
+
+<figure>
+  <img src="/assets/topo_inclusion.png" />
+  <figcaption>One object including the other.</figcaption>
+</figure>
 
 === "stOTTR"
 
@@ -87,6 +101,11 @@ Instanitations of this template represent three pairwise overlapping objects.
 
 It may be extended to accomodate more than three objects.
 
+<figure>
+  <img src="/assets/topo_pairwise_overlap.png" />
+  <figcaption>Three objects with pairwise overlap.</figcaption>
+</figure>
+
 === "stOTTR"
 
     ```
@@ -103,6 +122,11 @@ Instanitations of this template represent three mutually overlapping objects.
 
 It may be extended to accomodate more than three objects.
 
+<figure>
+  <img src="/assets/topo_mutual_overlap.png" />
+  <figcaption>Three objects with mutual overlap.</figcaption>
+</figure>
+
 === "stOTTR"
 
     ```
@@ -118,6 +142,11 @@ It may be extended to accomodate more than three objects.
 Instanitations of this template represent three pairwise **and** mutually overlapping objects.
 
 It may be extended to accomodate more than three objects.
+
+<figure>
+  <img src="/assets/topo_pairwise_mutual_overlap.png" />
+  <figcaption>Three objects with pairwise and mutual overlap.</figcaption>
+</figure>
 
 === "stOTTR"
 

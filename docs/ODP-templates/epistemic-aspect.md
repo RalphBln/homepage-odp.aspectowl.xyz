@@ -1,5 +1,10 @@
 # Epistemic aspect
 
+<figure>
+  <img src="/assets/epistemic_situations.png" />
+  <figcaption>Example of an epistemic aspect</figcaption>
+</figure>
+
 === "stOTTR"
 
     ```

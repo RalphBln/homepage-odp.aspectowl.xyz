@@ -1,5 +1,10 @@
 # Simple named aspects
 
+<figure>
+  <img src="/assets/named_aspect.png" />
+  <figcaption>Example of a named aspect</figcaption>
+</figure>
+
 === "stOTTR"
 
     ```
