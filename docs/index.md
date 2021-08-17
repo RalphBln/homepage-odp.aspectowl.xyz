@@ -12,7 +12,7 @@ These pages accommodate supplementary resources accompanying two peer-reviewed p
 [^1]:
     === "Publication"
 
-        Ralph Schäfermeier, Adrian Paschke, and Heinrich Herre. Ontology Design Patterns for Represent- ing Context in Ontologies Using Aspect Orientation. In Krzysztof Janowicz, Adila Alfa Krisnadhi, María Poveda Villalón, Karl Hammar, and Cogan Shimizu, editors, *Proceedings of the 10th Workshop on Ontology Design and Patterns (WOP 2019) co-located with 18th International Semantic Web Conference (ISWC 2019), Auckland, New Zealand, October 27, 2019,* volume 2459 of CEUR Workshop Proceedings, pages 32–46. CEUR-WS.org, 2019.
+        Ralph Schäfermeier, Adrian Paschke, and Heinrich Herre. Ontology Design Patterns for Representing Context in Ontologies Using Aspect Orientation. In Krzysztof Janowicz, Adila Alfa Krisnadhi, María Poveda Villalón, Karl Hammar, and Cogan Shimizu, editors, *Proceedings of the 10th Workshop on Ontology Design and Patterns (WOP 2019) co-located with 18th International Semantic Web Conference (ISWC 2019), Auckland, New Zealand, October 27, 2019,* volume 2459 of CEUR Workshop Proceedings, pages 32–46. CEUR-WS.org, 2019.
 
         [View paper online :material-file-pdf-outline:](http://ceur-ws.org/Vol-2459/paper3.pdf){ .md-button }
 
