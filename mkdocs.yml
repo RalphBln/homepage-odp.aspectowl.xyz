@@ -5,7 +5,7 @@ theme:
     primary: pink
     accent: pink
   logo:
-    assets/logo.png
+    assets/logo.svg
   features:
     - search.highlight
     - content.code.annotate
