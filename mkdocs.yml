@@ -35,9 +35,12 @@ extra_javascript:
 copyright: Copyright &copy; 2021 Ralph Schäfermeier
 extra:
   social:
+    - icon: material/card-account-details
+      link: https://ralph.schaefermeier.net
+      name: Visit my homepage
     - icon: fontawesome/brands/researchgate
       link: https://www.researchgate.net/profile/Ralph-Schaefermeier
-      name: Get in touch
+      name: Get in touch via ResearchGate
 nav:
   - Overview: index.md
   - ODP templates:
